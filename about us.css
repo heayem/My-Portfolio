@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    
+}
+body {
+    height: 150vh;
+}
+.top-logo {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo  {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.menu ul li a {
+    color: black;
+    height: 60px;
+}
+
+.menu ul li a:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.027);
+}
+
+
+.btn-respon {
+    margin-right: 100px;
+    font-size: 40px;
+    float: right;
+    position: relative;
+    display: none;
+
+}
+.btn {
+    float: right;
+    height: 100%;
+    display: none;
+}
+
+.btn-respon ul {
+    top: 65px;
+    list-style-type: none;
+    width: 150px;
+    padding: 5px;
+    background-color: rgba(19, 16, 16, 0.377);
+    position: absolute;
+    z-index: 3;
+    display: none;
+
+}
+
+.btn-respon ul li {
+    margin: 10px;
+}
+
+.btn-respon ul li a {
+    
+    color:#fff;
+    text-decoration: none;
+
+}
+.img {
+    max-width: 200px;
+    height: auto;
+    margin: auto;
+}
+.img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.226);
+}
+
+
+
+/* large laptop */
+@media (min-width: 991px) and (max-width:1300px) {}
+
+/* portrait table to large laptop */
+@media (min-width: 768px) and (max-width:991px) {}
+
+/* landspace phone */
+@media (min-width: 480px) and (max-width:787px) {}
+
+/*portrait phone */
+@media (max-width: 479px) {
+    .logo {
+        display: none;
+    }
+
+}
+
+/* for phone */
+@media (max-width:390px) {
+
+    .logo {
+        display: block;
+    }
+    .btn {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+
+    .btn-respon {
+        display: block;
+    }
+
+}
